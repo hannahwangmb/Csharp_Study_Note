@@ -1,9 +1,17 @@
 # Csharp_Study_Note
 
 
-#### Data Types:
+#### Main Data Types  
 `string` for words, phrases, or any alphanumeric data for presentation, not calculation  
 `char` for a single alphanumeric character  
 `int` for a whole number  
 `decimal` for a number with a fractional component  
 `bool` for a true/false value  
+
+#### Variable Declaration  
+To create a new variable, first declare the data type of the variable and give it a name: `dataType firstName;`  
+##### Variable name rules:
+- Can contain alphanumeric characters and the underscore character (1,2,3,...,a,B,c,...,_). Special characters are not allowed.  
+- Must begin with an alphabetical letter or an underscore, not a number.
+- Case-sensitive.
+- Must not be a C# keyword. For excample, you cannot use: `decimal decimal;` or `string string;`
