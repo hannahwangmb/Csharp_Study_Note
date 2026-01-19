@@ -22,3 +22,12 @@ To create a new variable, first declare the data type of the variable and give i
 - A string variable was created using the `var` keyword instead of the `string` keyword. The `var` keyword tells the C# compiler that the data type is implied by the assigned value.   
 - Now, the `message` variable is typed to be a `string` and can never be changed.
 - NOTE: Variables using the `var` keyword must be initialized. Solely `var message;` will generate an error.
+
+#### formatting literal strings
+`\n` adds a new line.  
+`\t` adds a tab.  
+`\` escape sequence.  
+`@` creates a verbatim string literal that keeps all whitespace formatting and backslash characters in a string.  
+
+
+
