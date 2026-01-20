@@ -1,4 +1,4 @@
-# Csharp_Study_Note
+# C#_Learning_Note
 
 
 #### Main Data Types  
@@ -28,6 +28,34 @@ To create a new variable, first declare the data type of the variable and give i
 `\t` adds a tab.  
 `\` escape sequence.  
 `@` creates a verbatim string literal that keeps all whitespace formatting and backslash characters in a string.  
+
+#### String Concatenation
+```
+// Interpolation expression
+string message = greeting + " " + firstName + "!";
+// or
+string message = $"{greeting} {firstName}!";
+
+// Use string interpolation to combine a literal string and a variable value
+string firstName = "Bob"; 
+string message = $"Hello {firstName}!";  
+Console.WriteLine(message);
+
+// Use string interpolation with multiple variables and literal strings
+int version = 11;  
+string updateText = "Update to Windows";  
+string message = $"{updateText} {version}";  
+Console.WriteLine(message);
+
+// Avoid intermediate variables
+int version = 11;
+string updateText = "Update to Windows";
+Console.WriteLine($"{updateText} {version}!");
+
+// Combine verbatim literals and string interpolation
+string projectName = "First-Project";
+Console.WriteLine($@"C:\Output\{projectName}\Data");
+```
 
 
 
